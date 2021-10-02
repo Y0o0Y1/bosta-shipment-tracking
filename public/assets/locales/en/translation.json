@@ -1,0 +1,12 @@
+{
+    "welcome_to_react":"Welcome To React English Version",
+    "main_button_navbar":"Home",
+    "pricing_button_navbar":"Pricing",
+    "contact_sales_button_navbar":"Contact Sales",
+    "tracking_shipment_dropDown_navbar":"Tracking Shipment",
+    "signIn_button_navbar":"Sign In",
+    "change_lang_button_navbar":"عربي",
+    "track_shipment_field":"Enter Your Shipment Number",
+    "track_shipment_header":"Track Your Shipment here !"
+
+}

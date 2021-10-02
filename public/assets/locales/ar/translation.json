@@ -1,0 +1,11 @@
+{
+    "welcome_to_react":"اهلا بكم في بوسطه",
+    "main_button_navbar":"الرئيسية",
+    "pricing_button_navbar":"الأسعار",
+    "contact_sales_button_navbar":"كلم المبيعات",
+    "tracking_shipment_dropDown_navbar":"تتبع شحنتك",
+    "signIn_button_navbar":"تسجيل الدخول",
+    "change_lang_button_navbar":"ENG",
+    "track_shipment_field":"أدخل رقم الشحنة",
+    "track_shipment_header":"تتبع شحنتك هنا !"
+}
