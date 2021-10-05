@@ -7,6 +7,20 @@
     "signIn_button_navbar":"Sign In",
     "change_lang_button_navbar":"عربي",
     "track_shipment_field":"Enter Your Shipment Number",
-    "track_shipment_header":"Track Your Shipment here !"
-
+    "track_shipment_header":"Track Your Shipment here !",
+    "state1":"TICKET CREATED",
+    "state2":"PACKAGE RECEIVED",
+    "state3":"IN TRANSIT",
+    "state4":"DELIVERED",
+    "shipment_number":"Shipment Number",
+    "latest_update":"Latest Update",
+    "merchant_name":"Merchant Name",
+    "estimated_delievery_date":"Estimated Delivery",
+    "table_shipment_details":"Shipment Details",
+    "table_branch":"Branch",
+    "table_date":"Date",
+    "table_time":"Time",
+    "table_details":"Details",
+    "delivery_address":"Delivery Address",
+    "delivery_address_content":"Imbaba Talaat Harb Street Block 22, Sector 17 Cairo"
 }

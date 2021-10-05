@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 body {
-  margin: 0;
+  /* margin: 10px; */
   font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  color: white;
 }
 
 code {

@@ -1,8 +1,29 @@
-import React from 'react';
+import React from "react";
+import axios from "axios"
 
-// this is the equivalent to the createStore method of Redux
-// https://redux.js.org/api/createstore
+export const MainContext = React.createContext()
 
-const MainContext = React.createContext();
+const MainContextProvider = (props) => {
+    const [isSearching, setIsSearching] = React.useState(true);
+    const [shipment, setShipment] = React.useState();
+    const shipmentState = [
+        "TICKET_CREATED", "PACKAGE_RECEIVED", "IN_TRANSIT", "NOT_YET_SHIPPED", "OUT_FOR_DELIVERY",
+        "WAITING_FOR_CUSTOMER_ACTION", "DELIVERED"
+    ]
+    const handleSearch = (shipmentNumber) => {
+        axios.get(`https://tracking.bosta.co/shipments/track/${shipmentNumber}`).then((response) => {
+            setShipment(response.data)
+            console.log(response.data)
+            setIsSearching(false)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }
+    return <MainContext.Provider
+        value={{ handleSearch, isSearching, setIsSearching, shipment, shipmentState }}
+    >
+        {props.children}
+    </MainContext.Provider>
+}
 
-export default MainContext;
+export default MainContextProvider;

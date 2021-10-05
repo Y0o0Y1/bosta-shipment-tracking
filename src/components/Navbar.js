@@ -22,7 +22,6 @@ const useStyles = makeStyles({
 
 const Navbar = () => {
     const classes = useStyles();
-
     const { t } = useTranslation();
     const { currentLng, setCurrentLng, textDirection, setTextDirection } = useContext(LocaleContext);
     const [logoURL, setLogoURL] = React.useState();

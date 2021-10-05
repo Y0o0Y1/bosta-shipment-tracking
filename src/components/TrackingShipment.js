@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import {
-    Typography,
-    Grid,
-    makeStyles,
-} from '@material-ui/core';
-import TextField from '@mui/material/TextField';
-import { useTranslation } from "react-i18next";
 import { LocaleContext } from "../contexts/LocaleContext";
-import { AccessAlarm, SearchIcon } from '@material-ui/icons';
+import { useTranslation } from "react-i18next";
+
+import { MainContext } from '../contexts/MainContext';
+
+import { Typography, Grid, makeStyles, Card, CardContent } from '@material-ui/core';
+
+import TextField from '@mui/material/TextField';
+import { Search } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     trackShipmentWrapper: {
@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
         border: "3px solid #f0f0f0",
         borderRadius: "30px",
         width: "460px",
-        height: "60%",
+        height: "10rem",
         margin: "2rem",
         padding: "50px",
         transition: "all 1s",
         backgroundColor: "#FAFAFA",
         [theme.breakpoints.down(919)]: {
             width: "75%",
-            height: "50%",
+            height: "10rem",
             transition: "all 1s",
         }
     },
@@ -48,13 +48,36 @@ const useStyles = makeStyles((theme) => ({
             margin: "25%",
             transition: "all 1s",
         }
+    },
+    searchIconWrapper: {
+        width: "100%",
+        height: "80%",
+        backgroundColor: "#FAFAFA",
+        display: "grid",
+        alignContent: "center",
+        justifySelf: "center",
+        borderRadius: "20",
+        margin: "0 5%",
+        cursor: "pointer"
+    },
+    searchIcon: {
+        fontSize: "2rem",
+        margin: "0 15%",
+        color: "Red",
+        justifySelf: "center"
     }
 }))
+
 const TrackingShipment = () => {
     const classes = useStyles()
     const { t } = useTranslation();
     const { textDirection } = useContext(LocaleContext)
+    const { handleSearch } = useContext(MainContext);
     const [shipmentNumber, setShipmentNumber] = React.useState("");
+    const handleClick = () => {
+        if (shipmentNumber)
+            handleSearch(shipmentNumber);
+    }
     const handleChange = (event) => {
         setShipmentNumber(event.target.value);
     };
@@ -66,7 +89,7 @@ const TrackingShipment = () => {
                         {t("track_shipment_header")}
                     </Typography>
                 </Grid>
-                <Grid item>
+                <Grid item container>
                     <TextField
                         className={classes.textField}
                         id="outlined-name"
@@ -77,9 +100,10 @@ const TrackingShipment = () => {
                         required
                     >
                     </TextField>
-                    <Grid item>
-
-                        <SearchIcon color="primary" />
+                    <Grid item >
+                        <div className={classes.searchIconWrapper} onClick={handleClick}>
+                            <Search className={classes.searchIcon} />
+                        </div>
                     </Grid>
                 </Grid>
             </Grid>

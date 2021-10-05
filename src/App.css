@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
-* {
-    /* font-family: 'Cairo', sans-serif; */
-
-}
-
 .main-content {
-    display: grid;
-    justify-content: center;
     align-content: center;
+    align-self: center;
+    justify-self: center;
+    /* padding: 20px; */
+    height: 100%;
+    width: 100%;
 }
 
 /* @media screen and (max-width: 919px) {
