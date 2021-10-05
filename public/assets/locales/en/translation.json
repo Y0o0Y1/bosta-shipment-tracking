@@ -22,5 +22,10 @@
     "table_time":"Time",
     "table_details":"Details",
     "delivery_address":"Delivery Address",
-    "delivery_address_content":"Imbaba Talaat Harb Street Block 22, Sector 17 Cairo"
+    "delivery_address_content":"Imbaba Talaat Harb Street Block 22, Sector 17 Cairo",
+    "TICKET_CREATED":"TICKET CREATED",
+    "PACKAGE_RECEIVED":"PACKAGE RECEIVED",
+    "IN_TRANSIT":"IN TRANSIT",
+    "DELIVERED":"DELIVERED"
+
 }

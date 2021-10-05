@@ -1,5 +1,5 @@
 {
-    "welcome_to_react":"اهلا بكم في بوسطه",
+    "welcome_to_react":"اهلا بكم في بوسطة",
     "main_button_navbar":"الرئيسية",
     "pricing_button_navbar":"الأسعار",
     "contact_sales_button_navbar":"كلم المبيعات",
@@ -8,19 +8,19 @@
     "change_lang_button_navbar":"ENG",
     "track_shipment_field":"أدخل رقم الشحنة",
     "track_shipment_header":"تتبع شحنتك هنا !",
-    "step1":"تم انشاء الشحنة",
-    "step2":"تم استلام الشحنة من التاجر",
-    "step3":"الشحنة خرجت للتسليم",
-    "step4":"تم التسليم",
+    "TICKET_CREATED":"تم انشاء الشحنة",
+    "PACKAGE_RECEIVED":"تم استلام الشحنة من التاجر",
+    "IN_TRANSIT":"الشحنة خرجت للتسليم",
+    "DELIVERED":"تم تسليم الشحنة",
     "shipment_number":"رقم الشحنة",
     "latest_update":"اخر تحديث",
     "merchant_name":"اسم التاجر",
     "estimated_delievery_date":"موعد التسليم خلال",
-    "table_shipment_details":"تفاصيل الشحنه",
+    "table_shipment_details":"تفاصيل الشحنة",
     "table_branch":"الفرع",
     "table_date":"التاريخ",
     "table_time":"الوقت",
     "table_details":"تفاصيل",
     "delivery_address":"عنوان التسليم",
-    "delivery_address_content":"امبابه شارع طلعت حرب بجوار البرنس منزل ١٧ بلوك٢٢ القاهرة"
+    "delivery_address_content":"امبابة شارع طلعت حرب بجوار البرنس منزل ١٧ بلوك٢٢ القاهرة"
 }

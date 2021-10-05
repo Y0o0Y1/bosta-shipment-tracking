@@ -21,9 +21,9 @@ function createData(branch, date, time, details) {
 const ShipmentDetails = () => {
     const { t } = useTranslation();
     const { textDirection, currentLng } = useContext(LocaleContext)
-    const { shipment, shipmentState } = useContext(MainContext)
+    const { shipment, shipmentStates } = useContext(MainContext)
     const rows = shipment.TransitEvents.map((event) => {
-        const eventState = (shipmentState.filter((state) => {
+        const eventState = (shipmentStates.filter((state) => {
             return event.state === state
         })[0].replaceAll("_", " "))
         const branch = event.hub ? event.hub : "Nasr City"

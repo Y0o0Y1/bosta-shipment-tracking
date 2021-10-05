@@ -38,7 +38,7 @@ const loadingMarkup = (
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <LocaleContextProvider>
         <MainContextProvider>
           <Suspense fallback={loadingMarkup}>

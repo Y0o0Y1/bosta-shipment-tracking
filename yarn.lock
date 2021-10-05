@@ -863,14 +863,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-transform-react-jsx-development@^7.12.1":
-  "integrity" "sha512-BPjYV86SVuOaudFhsJR1zjgxxOhJDt6JHNoD48DxWEIxUCAMjV1ys6DYw4SDYZh0b1QsS2vfIA9t/ZsQGsDOUQ=="
-  "resolved" "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-development/-/plugin-transform-react-jsx-development-7.12.17.tgz"
-  "version" "7.12.17"
-  dependencies:
-    "@babel/plugin-transform-react-jsx" "^7.12.17"
-
-"@babel/plugin-transform-react-jsx-development@^7.12.12":
+"@babel/plugin-transform-react-jsx-development@^7.12.1", "@babel/plugin-transform-react-jsx-development@^7.12.12":
   "integrity" "sha512-BPjYV86SVuOaudFhsJR1zjgxxOhJDt6JHNoD48DxWEIxUCAMjV1ys6DYw4SDYZh0b1QsS2vfIA9t/ZsQGsDOUQ=="
   "resolved" "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-development/-/plugin-transform-react-jsx-development-7.12.17.tgz"
   "version" "7.12.17"
@@ -3015,21 +3008,7 @@
   dependencies:
     "babylon" "^6.18.0"
 
-"babel-jest@^26.6.0":
-  "integrity" "sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA=="
-  "resolved" "https://registry.npmjs.org/babel-jest/-/babel-jest-26.6.3.tgz"
-  "version" "26.6.3"
-  dependencies:
-    "@jest/transform" "^26.6.2"
-    "@jest/types" "^26.6.2"
-    "@types/babel__core" "^7.1.7"
-    "babel-plugin-istanbul" "^6.0.0"
-    "babel-preset-jest" "^26.6.2"
-    "chalk" "^4.0.0"
-    "graceful-fs" "^4.2.4"
-    "slash" "^3.0.0"
-
-"babel-jest@^26.6.3":
+"babel-jest@^26.6.0", "babel-jest@^26.6.3":
   "integrity" "sha512-pl4Q+GAVOHwvjrck6jKjvmGhnO3jHX/xuB9d27f+EJZ/6k+6nMuPjorrYp7s++bKKdANwzElBWnLWaObvTnaZA=="
   "resolved" "https://registry.npmjs.org/babel-jest/-/babel-jest-26.6.3.tgz"
   "version" "26.6.3"
@@ -4324,6 +4303,11 @@
   "integrity" "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg=="
   "resolved" "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
   "version" "3.0.0"
+
+"cssjanus@^2.0.1":
+  "integrity" "sha512-kAijbny3GmdOi9k+QT6DGIXqFvL96aksNlGr4Rhk9qXDZYWUojU4bRc3IHWxdaLNOqgEZHuXoe5Wl2l7dxLW5g=="
+  "resolved" "https://registry.npmjs.org/cssjanus/-/cssjanus-2.1.0.tgz"
+  "version" "2.1.0"
 
 "cssnano-preset-default@^4.0.7":
   "integrity" "sha512-x0YHHx2h6p0fCl1zY9L9roD7rnlltugGu7zXSKQx6k2rYw0Hi3IqxcoAGF7u9Q5w1nt7vK0ulxV8Lo+EvllGsA=="
@@ -7135,19 +7119,7 @@
     "jest-regex-util" "^26.0.0"
     "jest-snapshot" "^26.6.2"
 
-"jest-resolve@*":
-  "version" "26.6.0"
-  dependencies:
-    "@jest/types" "^26.6.0"
-    "chalk" "^4.0.0"
-    "graceful-fs" "^4.2.4"
-    "jest-pnp-resolver" "^1.2.2"
-    "jest-util" "^26.6.0"
-    "read-pkg-up" "^7.0.1"
-    "resolve" "^1.17.0"
-    "slash" "^3.0.0"
-
-"jest-resolve@^26.6.2":
+"jest-resolve@*", "jest-resolve@^26.6.2":
   "integrity" "sha512-sOxsZOq25mT1wRsfHcbtkInS+Ek7Q8jCHUB0ZUTP0tc/c41QHriU/NunqMfCUWsL4H3MHpvQD4QR9kSYhS7UvQ=="
   "resolved" "https://registry.npmjs.org/jest-resolve/-/jest-resolve-26.6.2.tgz"
   "version" "26.6.2"
@@ -7540,7 +7512,14 @@
     "css-vendor" "^2.0.8"
     "jss" "10.8.0"
 
-"jss@^10.5.1", "jss@^10.8.0", "jss@10.8.0":
+"jss-rtl@^0.3.0":
+  "integrity" "sha512-rg9jJmP1bAyhNOAp+BDZgOP/lMm4+oQ76qGueupDQ68Wq+G+6SGvCZvhIEg8OHSONRWOwFT6skCI+APGi8DgmA=="
+  "resolved" "https://registry.npmjs.org/jss-rtl/-/jss-rtl-0.3.0.tgz"
+  "version" "0.3.0"
+  dependencies:
+    "rtl-css-js" "^1.13.1"
+
+"jss@^10.0.0", "jss@^10.5.1", "jss@^10.8.0", "jss@10.8.0":
   "integrity" "sha512-6fAMLJrVQ8epM5ghghxWqCwRR0ZamP2cKbOAtzPudcCMSNdAqtvmzQvljUZYR8OXJIeb/IpZeOXA1sDXms4R1w=="
   "resolved" "https://registry.npmjs.org/jss/-/jss-10.8.0.tgz"
   "version" "10.8.0"
@@ -10520,6 +10499,13 @@
   "resolved" "https://registry.npmjs.org/rsvp/-/rsvp-4.8.5.tgz"
   "version" "4.8.5"
 
+"rtl-css-js@^1.13.1":
+  "integrity" "sha512-t6Wc/wpqm8s3kuXAV6tL/T7VS6n0XszzX58CgCsLj3O2xi9ITSLfzYhtl+GKyxCi/3QEqVctOJQwCiDzb2vteQ=="
+  "resolved" "https://registry.npmjs.org/rtl-css-js/-/rtl-css-js-1.14.2.tgz"
+  "version" "1.14.2"
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+
 "run-parallel@^1.1.9":
   "integrity" "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA=="
   "resolved" "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz"
@@ -11360,7 +11346,14 @@
     "postcss" "^7.0.0"
     "postcss-selector-parser" "^3.0.0"
 
-"stylis@^4.0.3":
+"stylis-plugin-rtl@^2.1.0":
+  "integrity" "sha512-WGqhbQdlbXN3UelhOObu58+aG02jm8ACehr8iBDf7qLQ6lbUxD6YwM8t/5IcwLRjj7BVjIN8eA8YfwJuqwBVSg=="
+  "resolved" "https://registry.npmjs.org/stylis-plugin-rtl/-/stylis-plugin-rtl-2.1.0.tgz"
+  "version" "2.1.0"
+  dependencies:
+    "cssjanus" "^2.0.1"
+
+"stylis@^4.0.10", "stylis@^4.0.3", "stylis@4.x":
   "integrity" "sha512-m3k+dk7QeJw660eIKRRn3xPF6uuvHs/FFzjX3HQ5ove0qYsiygoAhwn5a3IYKaZPo5LrYD0rfVmtv1gNY1uYwg=="
   "resolved" "https://registry.npmjs.org/stylis/-/stylis-4.0.10.tgz"
   "version" "4.0.10"

@@ -4,7 +4,7 @@ export const LocaleContext = React.createContext()
 
 const LocaleContextProvider = (props) => {
     const [currentLng, setCurrentLng] = React.useState("en");
-    const [textDirection, setTextDirection] = React.useState("ltr")
+    const [textDirection, setTextDirection] = React.useState("")
     return <LocaleContext.Provider
         value={{ currentLng, setCurrentLng, textDirection, setTextDirection }}
     >

@@ -4,16 +4,6 @@
     align-content: center;
     align-self: center;
     justify-self: center;
-    /* padding: 20px; */
     height: 100%;
     width: 100%;
 }
-
-/* @media screen and (max-width: 919px) {
-    .main-content {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        transition: all 1s 3s;
-    }
-} */

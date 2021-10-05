@@ -8,7 +8,12 @@ import {
     Toolbar,
     Button,
     makeStyles,
+    useMediaQuery,
+    Menu,
+    Typography,
+    MenuItem
 } from "@material-ui/core";
+
 import { LocaleContext } from "../contexts/LocaleContext";
 
 const useStyles = makeStyles({
@@ -28,11 +33,17 @@ const Navbar = () => {
     React.useEffect(() => {
         setLogoURL(process.env.PUBLIC_URL + `/assets/locales/${currentLng}/logo.svg`)
     }, [currentLng]);
-
+    const [anchor, setAnchor] = React.useState(null);
+    const open = Boolean(anchor);
+    const handleMenu = (event) => {
+        setAnchor(event.currentTarget);
+    };
+    // const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+    const isMobile = useMediaQuery('(max-width:850px)')
     const handleLngChange = () => {
         console.log("handling")
         if (currentLng === "ar") {
-            console.log(currentLng)
+            console.log(logoURL)
             i18next.changeLanguage("en")
             setCurrentLng("en")
             setTextDirection("ltr")
@@ -45,12 +56,32 @@ const Navbar = () => {
         }
     }
     return (
-        <div>
-            <Box dir={textDirection}>
-                <AppBar style={{ background: 'white' }} position="static">
-                    <Toolbar>
+        <AppBar style={{ background: 'white' }} position="static">
+            <Toolbar>
+                {isMobile ? (<>
+                    <Grid container>
+                        <Grid item xs={6}>
+                            <img src={logoURL} alt="logo" />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Button
+                                classes={{ root: classes.root }}
+                            >
+                                {t("main_button_navbar")}
+                            </Button>
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Button
+                                classes={{ root: classes.root }}
+                                style={{ color: "red" }}
+                                onClick={handleLngChange}
+                            >{t("change_lang_button_navbar")}</Button>
+                        </Grid>
+                    </Grid>
+                </>) :
+                    <>
                         <img src={logoURL} alt="logo" />
-                        <Grid
+                        <Grid sx
                             style={{
                                 margin: "0 5%",
                             }}
@@ -59,17 +90,23 @@ const Navbar = () => {
                             alignItems="flex-start"
                             justifyContent="flex-start"
                         >
-                            <Button
-                                classes={{ root: classes.root }}
-                            >
-                                {t("main_button_navbar")}
-                            </Button>
-                            <Button
-                                classes={{ root: classes.root }}
-                            >{t("pricing_button_navbar")}</Button>
-                            <Button
-                                classes={{ root: classes.root }}
-                            >{t("contact_sales_button_navbar")}</Button>
+                            <Grid item xs={1.7}>
+                                <Button
+                                    classes={{ root: classes.root }}
+                                >
+                                    {t("main_button_navbar")}
+                                </Button>
+                            </Grid>
+                            <Grid item xs={3}>
+                                <Button
+                                    classes={{ root: classes.root }}
+                                >{t("pricing_button_navbar")}</Button>
+                            </Grid>
+                            <Grid item xs={5}>
+                                <Button
+                                    classes={{ root: classes.root }}
+                                >{t("contact_sales_button_navbar")}</Button>
+                            </Grid>
                         </Grid>
                         <Grid
                             direction="row"
@@ -85,10 +122,9 @@ const Navbar = () => {
                                 onClick={handleLngChange}
                             >{t("change_lang_button_navbar")}</Button>
                         </Grid>
-                    </Toolbar>
-                </AppBar>
-            </Box>
-        </div>
+                    </>}
+            </Toolbar>
+        </AppBar>
     );
 };
 
